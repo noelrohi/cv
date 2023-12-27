@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { Calculator, Calendar, Smile } from "lucide-react";
 
 import {
   CommandDialog,
@@ -12,6 +11,7 @@ import {
   CommandList,
   CommandSeparator,
 } from "@/components/ui/command";
+import { isMacOs } from "@/lib/utils";
 
 interface Props {
   links: { url: string; title: string }[];
@@ -19,6 +19,7 @@ interface Props {
 
 export const CommandMenu = ({ links }: Props) => {
   const [open, setOpen] = React.useState(false);
+  const [isPrinting, startPrinting] = React.useTransition();
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -37,7 +38,8 @@ export const CommandMenu = ({ links }: Props) => {
       <p className="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden">
         Press{" "}
         <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
-          <span className="text-xs">⌘</span>J
+          <span className="text-xs">{isMacOs() && "⌘"}</span>
+          {!isMacOs() && "Ctrl"} J
         </kbd>{" "}
         to open the command menu
       </p>
@@ -49,10 +51,13 @@ export const CommandMenu = ({ links }: Props) => {
             <CommandItem
               onSelect={() => {
                 setOpen(false);
-                window.print();
+                startPrinting(async () => {
+                  await new Promise((r) => setTimeout(r, 500));
+                  window.print();
+                });
               }}
             >
-              <span>Print</span>
+              <span>Print{isPrinting && "ing..."}</span>
             </CommandItem>
           </CommandGroup>
           <CommandGroup heading="Links">
