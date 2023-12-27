@@ -108,6 +108,20 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Rohi.dev",
+      techStack: [
+        "Side Project",
+        "Astro.js",
+        "TailwindCSS",
+        "MDX",
+      ],
+      description: "My personal website and blog. Some of my activities are also here. Built with Astro and TailwindCSS",
+      link: {
+        label: "rohi.dev",
+        href: "https://rohi.dev/",
+      },
+    },
+    {
       title: "K-Next",
       techStack: [
         "Side Project",
