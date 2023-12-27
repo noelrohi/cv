@@ -27,14 +27,14 @@ export default function Page() {
               {RESUME_DATA.about}
             </p>
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
-              <a
+              <Link
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
                 href={RESUME_DATA.locationLink}
                 target="_blank"
               >
                 <GlobeIcon className="h-3 w-3" />
                 {RESUME_DATA.location}
-              </a>
+              </Link>
             </p>
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
               <Link
@@ -47,24 +47,22 @@ export default function Page() {
                 <MailIcon className="h-4 w-4" />
               </Link>
               {RESUME_DATA.contact.social.map((social) => (
-                <Button
-                  key={social.name}
-                  className="size-8"
-                  variant="outline"
-                  size="icon"
-                  asChild
+                <Link
+                  className={cn(
+                    buttonVariants({ variant: "outline", size: "icon" }),
+                    "size-8"
+                  )}
+                  href={social.url}
                 >
-                  <a href={social.url}>
-                    <social.icon className="h-4 w-4" />
-                  </a>
-                </Button>
+                  <social.icon className="h-4 w-4" />
+                </Link>
               ))}
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (
-                <a href={`mailto:${RESUME_DATA.contact.email}`}>
+                <Link href={`mailto:${RESUME_DATA.contact.email}`}>
                   <span className="underline">{RESUME_DATA.contact.email}</span>
-                </a>
+                </Link>
               ) : null}
             </div>
           </div>
