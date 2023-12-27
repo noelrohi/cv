@@ -12,7 +12,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
+  title: RESUME_DATA.name,
   description: RESUME_DATA.summary,
 };
 
@@ -40,7 +40,7 @@ export default function Page() {
               <Link
                 className={cn(
                   buttonVariants({ variant: "outline", size: "icon" }),
-                  "size-8",
+                  "size-8"
                 )}
                 href={`mailto:${RESUME_DATA.contact.email}`}
               >
