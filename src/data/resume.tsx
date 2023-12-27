@@ -1,5 +1,4 @@
-import { LinkedInIcon, GitHubIcon, XIcon } from "@/components/icons";
-import ExploreTale from "@/assets/logo/exploretale.svg";
+import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Noel Rohi Garcia",
@@ -11,10 +10,9 @@ export const RESUME_DATA = {
   summary:
     "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. Currently, I work mostly with TypeScript, React, Node.js, and MySQL. I have over 1 year of experience in web development.",
   avatarUrl: "https://avatars.githubusercontent.com/u/105811202?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  personalWebsiteUrl: "https://rohi.dev",
   contact: {
     email: "n@rohi.dev",
-    // tel: "+48530213401",
     social: [
       {
         name: "GitHub",
@@ -55,7 +53,7 @@ export const RESUME_DATA = {
     {
       company: "Exploretale Technologies",
       link: "https://exploretale.tech",
-      badges: ["Remote", "Freelance"],
+      badges: ["Freelance"],
       title: "Front-End Developer",
       start: "Jun 2023",
       end: "Oct 2023",
