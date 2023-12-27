@@ -23,7 +23,7 @@ export const CommandMenu = ({ links }: Props) => {
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
-      if (e.key === "j" && (e.metaKey || e.ctrlKey)) {
+      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         setOpen((open) => !open);
       }
@@ -39,7 +39,7 @@ export const CommandMenu = ({ links }: Props) => {
         Press{" "}
         <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
           <span className="text-xs">{isMacOs() && "⌘"}</span>
-          {!isMacOs() && "Ctrl"} J
+          {!isMacOs() && "Ctrl"} K
         </kbd>{" "}
         to open the command menu
       </p>
@@ -58,6 +58,16 @@ export const CommandMenu = ({ links }: Props) => {
               }}
             >
               <span>Print{isPrinting && "ing..."}</span>
+            </CommandItem>
+            <CommandItem
+              onSelect={() => {
+                navigator.share({
+                  title: "Rohi's CV",
+                  url: "https://cv.rohi.dev",
+                });
+              }}
+            >
+              <span>Share CV</span>
             </CommandItem>
           </CommandGroup>
           <CommandGroup heading="Links">
