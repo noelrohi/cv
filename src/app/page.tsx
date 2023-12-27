@@ -48,6 +48,7 @@ export default function Page() {
               </Link>
               {RESUME_DATA.contact.social.map((social) => (
                 <Link
+                  key={social.name}
                   className={cn(
                     buttonVariants({ variant: "outline", size: "icon" }),
                     "size-8"
