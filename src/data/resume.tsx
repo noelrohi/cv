@@ -9,7 +9,8 @@ export const RESUME_DATA = {
     "Full Stack Engineer focused on building products with extra attention to details",
   summary:
     "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. Currently, I work mostly with TypeScript, React, Node.js, and MySQL. I have over 1 year of experience in web development.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/105811202?v=4",
+  avatarUrl:
+    "https://utfs.io/f/810358f7-3ea4-419b-9d7a-0f9627a13c7c-o3eep5.jpg",
   personalWebsiteUrl: "https://rohi.dev",
   contact: {
     email: "n@rohi.dev",
