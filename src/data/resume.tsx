@@ -49,7 +49,7 @@ export const RESUME_DATA = {
       start: "Jan 2023",
       end: "Present",
       description:
-        "Implemented new features, fixed bugs, started migration from Bootstrap4 to Tailwind CSS, now building app for Finance using Nextjs. Technologies: PHP, Yii, React, Nextjs, Typescript, Git",
+        "Implemented new features, fixed bugs, started migration from Bootstrap4 to Tailwind CSS, now building app for Finance using Nextjs. Technologies: React, Nextjs, Typescript, TailwindCSS, PHP, Yii, Jquery, Laravel",
     },
     {
       company: "Exploretale Technologies",
@@ -59,7 +59,7 @@ export const RESUME_DATA = {
       start: "Jun 2023",
       end: "Oct 2023",
       description:
-        "Integrate REST API, replicated UI made with Figma, SEO and more. Meetings held on discord / google meet. Technologies: PHP, Yii, React, Nextjs, Typescript, Git",
+        "Integrate REST API, replicated UI made with Figma, SEO and more. Meetings held on discord / google meet. Technologies: React, Nextjs, Typescript, TailwindCSS, Git",
     },
   ],
   skills: [
@@ -70,6 +70,7 @@ export const RESUME_DATA = {
     "TailwindCSS",
     "PHP",
     "Git",
+    "MySQL"
   ],
   projects: [
     {
