@@ -8,7 +8,7 @@ export const RESUME_DATA = {
   about:
     "Full Stack Engineer focused on building products with extra attention to details",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. Currently, I work mostly with TypeScript, React, Node.js, and MySQL. I have over 1 year of experience in web development.",
+    "I specialize in TypeScript, React, Node.js, and MySQL, crafting code with precision and embracing type safety for clean, efficient solutions. With over a year immersed in web development, I thrive in the realm of creating dynamic, user-centric experiences.",
   avatarUrl:
     "https://utfs.io/f/cf356951-9025-4d7d-9fc8-2cde9bb19558-o3eep5.jpg",
   personalWebsiteUrl: "https://rohi.dev",
@@ -70,17 +70,17 @@ export const RESUME_DATA = {
     "TailwindCSS",
     "PHP",
     "Git",
-    "MySQL"
+    "MySQL",
   ],
   projects: [
     {
-      title: "Anirohi",
+      title: "anirohi",
       techStack: [
         "Side Project",
         "TypeScript",
         "Next.js",
         "TailwindCSS",
-        "Radix UI",
+        "Shadcn UI",
         "GraphQL",
         "Planetscale MySQL",
         "Drizzle ORM",
@@ -98,7 +98,7 @@ export const RESUME_DATA = {
         "TypeScript",
         "Next.js",
         "TailwindCSS",
-        "Radix UI",
+        "Shadcn UI",
         "Planetscale MySQL",
         "Drizzle ORM",
       ],
@@ -109,14 +109,17 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Rohi.dev",
+      title: "rohi.dev",
       techStack: [
         "Side Project",
-        "Astro.js",
+        "Next.js",
         "TailwindCSS",
-        "MDX",
+        "Shadcn UI",
+        "Neon PostgreSQL",
+        "Drizzle ORM",
+        "Biome Formatter / Linter",
       ],
-      description: "My personal website and blog. Some of my activities are also here. Built with Astro and TailwindCSS",
+      description: "My personal website and blog.",
       link: {
         label: "rohi.dev",
         href: "https://rohi.dev/",
@@ -129,7 +132,7 @@ export const RESUME_DATA = {
         "TypeScript",
         "Next.js",
         "TailwindCSS",
-        "Radix UI",
+        "Shadcn UI",
         "Planetscale MySQL",
         "Drizzle ORM",
       ],

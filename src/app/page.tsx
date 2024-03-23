@@ -1,15 +1,15 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
-import { Metadata } from "next";
-import { Section } from "@/components/ui/section";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { RESUME_DATA } from "@/data/resume";
 import { ProjectCard } from "@/components/project-card";
-import Link from "next/link";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
+import { buttonVariants } from "@/components/ui/button";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
+import { RESUME_DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
+import { GlobeIcon, MailIcon } from "lucide-react";
+import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: RESUME_DATA.name,
@@ -18,15 +18,15 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-12">
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
-            <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
-            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
+            <h1 className="font-bold text-2xl">{RESUME_DATA.name}</h1>
+            <p className="max-w-md text-pretty font-mono text-muted-foreground text-sm">
               {RESUME_DATA.about}
             </p>
-            <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
+            <p className="max-w-md items-center text-pretty font-mono text-muted-foreground text-xs">
               <Link
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
                 href={RESUME_DATA.locationLink}
@@ -36,11 +36,11 @@ export default function Page() {
                 {RESUME_DATA.location}
               </Link>
             </p>
-            <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
+            <div className="flex gap-x-1 pt-1 font-mono text-muted-foreground text-sm print:hidden">
               <Link
                 className={cn(
                   buttonVariants({ variant: "outline", size: "icon" }),
-                  "size-8"
+                  "size-8",
                 )}
                 href={`mailto:${RESUME_DATA.contact.email}`}
               >
@@ -51,7 +51,7 @@ export default function Page() {
                   key={social.name}
                   className={cn(
                     buttonVariants({ variant: "outline", size: "icon" }),
-                    "size-8"
+                    "size-8",
                   )}
                   href={social.url}
                 >
@@ -59,7 +59,7 @@ export default function Page() {
                 </Link>
               ))}
             </div>
-            <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
+            <div className="hidden flex-col gap-x-1 font-mono text-muted-foreground text-sm print:flex">
               {RESUME_DATA.contact.email ? (
                 <Link href={`mailto:${RESUME_DATA.contact.email}`}>
                   <span className="underline">{RESUME_DATA.contact.email}</span>
@@ -74,19 +74,19 @@ export default function Page() {
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">About</h2>
-          <p className="text-pretty font-mono text-sm text-muted-foreground">
+          <h2 className="font-bold text-xl">About</h2>
+          <p className="text-pretty font-mono text-muted-foreground text-sm">
             {RESUME_DATA.summary}
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="font-bold text-xl">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none whitespace-nowrap">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 whitespace-nowrap font-semibold leading-none">
                       <Link className="hover:underline" href={work.link}>
                         {work.company}
                       </Link>
@@ -103,7 +103,7 @@ export default function Page() {
                         ))}
                       </span>
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-gray-500 text-sm tabular-nums">
                       {work.start} - {work.end}
                     </div>
                   </div>
@@ -120,7 +120,7 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Education</h2>
+          <h2 className="font-bold text-xl">Education</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
@@ -129,7 +129,7 @@ export default function Page() {
                     <h3 className="font-semibold leading-none">
                       {education.school}
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-gray-500 text-sm tabular-nums">
                       {education.start} - {education.end}
                     </div>
                   </div>
@@ -140,7 +140,7 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
+          <h2 className="font-bold text-xl">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
@@ -149,8 +149,8 @@ export default function Page() {
         </Section>
 
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Projects</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+          <h2 className="font-bold text-xl">Projects</h2>
+          <div className="-mx-3 grid grid-cols-1 gap-3 lg:grid-cols-3 md:grid-cols-2 print:grid-cols-3 print:gap-2">
             {RESUME_DATA.projects.map((project) => {
               return (
                 <ProjectCard
