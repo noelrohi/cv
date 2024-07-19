@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "ui": "pnpm dlx shadcn-ui@latest",
-    "fmt": "pnpm biome format ./src --write && pnpm biome check ./src --apply-unsafe"
+    "fmt": "pnpm biome format src --write && pnpm biome check src --write --unsafe"
   },
   "dependencies": {
     "@loglib/tracker": "^0.8.0",
