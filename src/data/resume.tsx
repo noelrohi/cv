@@ -8,9 +8,9 @@ export const RESUME_DATA = {
   about:
     "Full Stack Engineer focused on building products with extra attention to details",
   summary:
-    "I specialize in TypeScript, React, Node.js, and MySQL, crafting code with precision and embracing type safety for clean, efficient solutions. With over a year immersed in web development, I thrive in the realm of creating dynamic, user-centric experiences.",
+    "I specialize in TypeScript, React, Node.js, and MySQL, crafting code with precision and embracing type safety for clean, efficient solutions. With more than 2 years immersed in web development, I thrive in the realm of creating dynamic, user-centric experiences.",
   avatarUrl:
-    "https://utfs.io/f/cf356951-9025-4d7d-9fc8-2cde9bb19558-o3eep5.jpg",
+    "https://utfs.io/f/71b10353-1b80-438b-9a49-f4c8e2f6537f-1xbtsr.jpeg",
   personalWebsiteUrl: "https://rohi.dev",
   contact: {
     email: "n@rohi.dev",
@@ -42,14 +42,24 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "ScaleForge",
+      link: "https://scaleforge.com",
+      badges: ["Remote"],
+      title: "Frontend Engineer",
+      start: "Jun 2024",
+      end: "Present",
+      description:
+        "Core Frontend member for an AI product. Technologies: React, Nextjs, Solidjs, Typescript, GraphQL",
+    },
+    {
       company: "CaPEx",
       link: "https://capex.com.ph",
       badges: ["On-site"],
       title: "Full Stack Developer",
       start: "Jan 2023",
-      end: "Present",
+      end: "Jun 2024",
       description:
-        "Implemented new features, fixed bugs, started migration from Bootstrap4 to Tailwind CSS, now building app for Finance using Nextjs. Technologies: React, Nextjs, Typescript, TailwindCSS, PHP, Yii, Jquery, Laravel",
+        "Built an app for Finance. Technologies: React, Nextjs, Typescript, REST API",
     },
     {
       company: "Exploretale Technologies",
@@ -59,7 +69,7 @@ export const RESUME_DATA = {
       start: "Jun 2023",
       end: "Oct 2023",
       description:
-        "Integrate REST API, replicated UI made with Figma, SEO and more. Meetings held on discord / google meet. Technologies: React, Nextjs, Typescript, TailwindCSS, Git",
+        "Built an app specially made for candidates of 2023 Election to boost their profile. Technologies: React, Nextjs, Typescript, REST API",
     },
   ],
   skills: [

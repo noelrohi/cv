@@ -20,10 +20,12 @@ interface Props {
 }
 
 export const CommandMenu = ({ links }: Props) => {
+  const [isClient, setIsClient] = React.useState(false);
   const [open, setOpen] = React.useState(false);
   const [isPrinting, startPrinting] = React.useTransition();
 
   React.useEffect(() => {
+    setIsClient(true);
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
@@ -40,8 +42,9 @@ export const CommandMenu = ({ links }: Props) => {
       <p className="fixed right-0 bottom-0 left-0 hidden border-t border-t-muted bg-white p-1 text-center text-muted-foreground text-sm xl:block print:hidden">
         Press{" "}
         <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-medium font-mono text-[10px] text-muted-foreground opacity-100">
-          <span className="text-xs">{isMacOs() && "⌘"}</span>
-          {!isMacOs() && "Ctrl"} K
+          <span className="text-xs">
+            {isClient && isMacOs() ? "⌘ K" : "Ctrl K"}
+          </span>
         </kbd>{" "}
         to open the command menu
       </p>
@@ -49,7 +52,7 @@ export const CommandMenu = ({ links }: Props) => {
         onClick={() => setOpen((open) => !open)}
         variant="outline"
         size="icon"
-        className="fixed right-4 bottom-4 flex rounded-full shadow-2xl print:hidden xl:hidden"
+        className="fixed right-4 bottom-4 flex rounded-full shadow-2xl xl:hidden print:hidden"
       >
         <Menu className="my-6 size-6" />
       </Button>
