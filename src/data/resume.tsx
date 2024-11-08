@@ -13,21 +13,21 @@ export const RESUME_DATA = {
     "https://utfs.io/f/71b10353-1b80-438b-9a49-f4c8e2f6537f-1xbtsr.jpeg",
   personalWebsiteUrl: "https://rohi.dev",
   contact: {
-    email: "n@rohi.dev",
+    email: "noelrohi59@gmail.com",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/gneiru",
+        url: "https://github.com/noelrohi",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/gneiru/",
+        url: "https://www.linkedin.com/in/noelrohi/",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/gneiru",
+        url: "https://x.com/noelrohi",
         icon: XIcon,
       },
     ],
@@ -49,7 +49,7 @@ export const RESUME_DATA = {
       start: "Jun 2024",
       end: "Present",
       description:
-        "Core Frontend member for an AI product. Technologies: React, Nextjs, Solidjs, Typescript, GraphQL",
+        "Fronteng Engineer of Research and Development team. Technologies: React, Nextjs, TypeScript, Drizzle ORM, TailwindCSS",
     },
     {
       company: "CaPEx",
@@ -59,7 +59,7 @@ export const RESUME_DATA = {
       start: "Jan 2023",
       end: "Jun 2024",
       description:
-        "Built an app for Finance. Technologies: React, Nextjs, Typescript, REST API",
+        "Built an app for Finance. Technologies: React, Nextjs, Typescript, REST API, TailwindCSS",
     },
     {
       company: "Exploretale Technologies",
@@ -69,18 +69,20 @@ export const RESUME_DATA = {
       start: "Jun 2023",
       end: "Oct 2023",
       description:
-        "Built an app specially made for candidates of 2023 Election to boost their profile. Technologies: React, Nextjs, Typescript, REST API",
+        "Built an app specially made for candidates of 2023 Election to boost their profile. Technologies: React, Nextjs, Typescript, REST API, TailwindCSS",
     },
   ],
   skills: [
-    "JavaScript",
     "TypeScript",
     "React/Next.js",
-    "Node.js",
     "TailwindCSS",
-    "PHP",
     "Git",
     "MySQL",
+    "PostgreSQL",
+    "SQLite",
+    "Shadcn UI",
+    "Drizzle ORM",
+    "Supabase",
   ],
   projects: [
     {
