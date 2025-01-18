@@ -49,7 +49,7 @@ export const RESUME_DATA = {
       start: "Jun 2024",
       end: "Present",
       description:
-        "Fronteng Engineer of Research and Development team. Technologies: React, Nextjs, TypeScript, Drizzle ORM, TailwindCSS",
+        "Frontend Engineer of Research and Development team. Technologies: React, Nextjs, TypeScript, Drizzle ORM, TailwindCSS",
     },
     {
       company: "CaPEx",
