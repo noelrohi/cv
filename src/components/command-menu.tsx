@@ -76,7 +76,7 @@ export const CommandMenu = ({ links }: Props) => {
               onSelect={() => {
                 navigator.share({
                   title: "Rohi's CV",
-                  url: "https://cv.rohi.dev",
+                  url: "https://cv.noelrohi.com",
                 });
               }}
             >

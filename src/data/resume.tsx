@@ -11,7 +11,7 @@ export const RESUME_DATA = {
     "I specialize in TypeScript, React, Node.js, and MySQL, crafting code with precision and embracing type safety for clean, efficient solutions. With more than 2 years immersed in web development, I thrive in the realm of creating dynamic, user-centric experiences.",
   avatarUrl:
     "https://utfs.io/f/71b10353-1b80-438b-9a49-f4c8e2f6537f-1xbtsr.jpeg",
-  personalWebsiteUrl: "https://rohi.dev",
+  personalWebsiteUrl: "https://www.noelrohi.com",
   contact: {
     email: "noelrohi59@gmail.com",
     social: [
@@ -99,8 +99,8 @@ export const RESUME_DATA = {
       ],
       description: "An anime streaming site with Anilist mutations and query.",
       link: {
-        label: "ani.rohi.dev",
-        href: "https://ani.rohi.dev/",
+        label: "ani.noelrohi.com",
+        href: "https://ani.noelrohi.com/",
       },
     },
     {
@@ -116,12 +116,12 @@ export const RESUME_DATA = {
       ],
       description: "A clone of Meta's Threads",
       link: {
-        label: "thr.rohi.dev",
-        href: "https://thr.rohi.dev/",
+        label: "thr.noelrohi.com",
+        href: "https://thr.noelrohi.com/",
       },
     },
     {
-      title: "rohi.dev",
+      title: "www",
       techStack: [
         "Side Project",
         "Next.js",
@@ -133,8 +133,8 @@ export const RESUME_DATA = {
       ],
       description: "My personal website and blog.",
       link: {
-        label: "rohi.dev",
-        href: "https://rohi.dev/",
+        label: "www.noelrohi.com",
+        href: "https://www.noelrohi.com/",
       },
     },
     {
@@ -150,8 +150,8 @@ export const RESUME_DATA = {
       ],
       description: "A kdrama streaming site.",
       link: {
-        label: "kd.rohi.dev",
-        href: "https://kd.rohi.dev/",
+        label: "kd.noelrohi.com",
+        href: "https://kd.noelrohi.com/",
       },
     },
   ],
